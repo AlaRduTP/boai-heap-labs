@@ -1,0 +1,7 @@
+.vscode/
+glibc-2.35/
+how2heap/
+flags.config
+.DS_Store
+*.o
+*.exp

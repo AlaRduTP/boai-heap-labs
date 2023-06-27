@@ -1,0 +1,13 @@
+service ctf
+{
+    id          = xinetd
+    type        = UNLISTED
+    disable     = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = nobody
+    server      = /run.sh
+    port        = ${CTF_PORT}
+    bind        = 0.0.0.0
+}
