@@ -1,2 +1,3 @@
 FLAG_SHOP=SQLab{fake_flag_shop}
 FLAG_GUESS=SQLab{fake_flag_guess}
+FLAG_ADMIN=SQLab{fake_flag_admin}

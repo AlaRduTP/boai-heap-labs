@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -Werror -std=gnu17
+CFLAGS := -Werror -std=gnu17 -fno-stack-protector
 
 SRC := $(wildcard *.c)
 OBJ := $(SRC:.c=.o)

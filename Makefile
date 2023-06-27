@@ -1,6 +1,6 @@
 include flags.config
 
-all: boai-shop boai-guess
+all: boai-shop boai-guess boai-admin
 
 boai-%: %
 	$(eval FLAG := $(FLAG_$(shell echo $< | tr '[:lower:]' '[:upper:]')))
