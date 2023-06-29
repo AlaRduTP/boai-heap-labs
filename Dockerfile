@@ -17,7 +17,7 @@ ENV CTF_PATH=${CTF_HOME}/${CTF_TARGET} \
     CTF_TIMEOUT=${CTF_TIMEOUT}
 
 WORKDIR ${CTF_HOME}
-COPY ./*.template ./${CTF_TARGET} .
+COPY ./*.template ./${CTF_TARGET} ./
 RUN make clean && \
     make && \
     envsubst < xinetd.template > /etc/xinetd.conf && \
