@@ -5,3 +5,4 @@ flags.config
 .DS_Store
 *.o
 *.exp
+docker-compose.yml

@@ -1,0 +1,29 @@
+version: '3'
+services:
+  admin:
+    build:
+      context: .
+      args:
+        CTF_TARGET: admin
+        CTF_TIMEOUT: 600
+        FLAG: ${FLAG_ADMIN}
+    ports:
+      - 8080:8080
+  guess:
+    build:
+      context: .
+      args:
+        CTF_TARGET: guess
+        CTF_TIMEOUT: 600
+        FLAG: ${FLAG_GUESS}
+    ports:
+      - 8080:8080
+  shop:
+    build:
+      context: .
+      args:
+        CTF_TARGET: shop
+        CTF_TIMEOUT: 600
+        FLAG: ${FLAG_SHOP}
+    ports:
+      - 8080:8080
