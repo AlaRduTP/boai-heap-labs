@@ -8,7 +8,7 @@ services:
         CTF_TIMEOUT: 600
         FLAG: ${FLAG_ADMIN}
     ports:
-      - 8080:8080
+      - 23571:8080
   guess:
     build:
       context: .
@@ -17,7 +17,7 @@ services:
         CTF_TIMEOUT: 600
         FLAG: ${FLAG_GUESS}
     ports:
-      - 8080:8080
+      - 23572:8080
   shop:
     build:
       context: .
@@ -26,4 +26,4 @@ services:
         CTF_TIMEOUT: 600
         FLAG: ${FLAG_SHOP}
     ports:
-      - 8080:8080
+      - 23573:8080
